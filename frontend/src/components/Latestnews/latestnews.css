@@ -1,0 +1,14 @@
+.explore{
+    /* z-index: 100; */
+    width: 600px;
+    max-width: 90%;
+    animation: popup .9s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+@keyframes popup {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}

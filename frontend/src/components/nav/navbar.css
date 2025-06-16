@@ -1,0 +1,41 @@
+.navbar{
+    @apply h-[5rem] px-8 md:px-14  py-6 bg-red-600 flex items-center justify-between relative
+}
+.mainheader{
+    @apply px-8 md:px-14 py-6 text-white h-[4.5rem] bg-green-600 flex items-center justify-between sticky top-0 w-full z-50
+}
+.mainheaderNav{
+    @apply flex items-center gap-6 text-[#ffff]
+}
+.mainheaderNav a{
+    @apply hover:underline hover:text-[#19328A]
+}
+.menu{
+    @apply hidden
+}
+.sideheaderNav{
+    @apply p-4
+}
+.sideheaderNav .sidelink{
+    @apply border-b-[1px] pb-2 text-[#]
+}
+@media screen and (max-width: 1060px) {
+    .navbar{
+        @apply hidden
+    }
+    .mainheaderNav{
+        @apply hidden
+    }
+    .menu{
+        @apply block
+    }
+    .login{
+        @apply hidden
+    }
+}
+.media{
+    transition: all .3s ease-in-out;
+}
+.media:hover{
+    transform: rotate(360deg);
+}

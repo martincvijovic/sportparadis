@@ -1,0 +1,54 @@
+.cartNum{
+    @apply text-[.7rem] bg-red-500 text-white w-[.9rem] rounded-full absolute top-[-.2rem] right-[-.1rem] flex align-middle justify-center
+}
+.user{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+@media screen and (max-width: 1023px) {
+    .header{
+        margin-top: 5rem;
+        background-color: red;
+        @apply bg-slate-50
+    
+    }
+    .cartIcon{
+        display: none;
+    }
+    .accBalance{
+        @apply flex-row space-x-4
+    }
+}
+@media screen and (max-width: 695px) {
+    .header{
+        padding-top: 6rem !important;
+        @apply  flex-col-reverse
+    }
+    .accBalance{
+        @apply flex-row  gap-20
+    
+    }
+    .user{
+        display: none;
+    }
+}
+@media screen and (max-width: 610px) {
+    .accBalance{
+        @apply flex-row space-x-40 gap-20
+    }
+}
+@media screen and (max-width: 480px) {
+    .accBalance{
+        @apply flex-row space-x-6 
+    }
+}
+@media screen and (max-width: 330px) {
+    .header{
+        padding-top: 7rem !important;
+        @apply mt-32
+    }
+    .accBalance{
+        @apply flex-col gap-10
+    }
+}

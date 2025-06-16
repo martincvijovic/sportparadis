@@ -1,0 +1,5 @@
+export { default as Admin } from './admin/Admin'
+export { default as Calender } from '../pages/Calender'
+export { default as History } from '../pages/History'
+export { default as Matches } from '../pages/Matches'
+export { default as Tournaments } from '../pages/Tournaments'
