@@ -30,7 +30,7 @@ services:
       context: .
       dockerfile: frontend/Dockerfile
     ports:
-      - "3000:80"   # nginx serves at port 80 inside container, mapped to 3000 locally
+      - "80:80"   # nginx serves at port 80 inside container, mapped to 3000 locally
     depends_on:
       - backend
 
